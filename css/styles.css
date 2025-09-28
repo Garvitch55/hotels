@@ -1,0 +1,1074 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: "CentralNo2";
+    src: url("../fonts/CentraNo2-Bold.woff2") format("truetype");
+}
+
+@font-face{
+    font-family: "CentralNo2normal";
+    src: url("../fonts/CentraNo2-Book.woff2") format("truetype");
+}
+
+@font-face{
+    font-family: "Recoleta";
+    src: url("../fonts/Recoleta-Regular.woff2") format("truetype");
+}
+
+/* BODY */
+
+body {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    font-family: 'CentralNo2';
+    gap: 30px;
+}
+
+/* BARRE DE NAVIGATION ET LOGO */
+.nav-conteneur{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+    
+    
+nav{
+    display: flex;
+    height: 70px;
+    width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'CentralNo2';
+    font-size: 14px;
+    color: #eb2543;
+
+
+}
+
+
+
+
+
+nav > .logo > img {
+    width: 180px;
+}
+
+.menu1{
+    margin-left: 20px;
+    width: 200px;
+    position : relative;
+}
+
+.menu1 > a {
+    text-decoration: none;
+    color: #eb2543;
+}
+
+.menu1::after {
+    position: absolute;
+    top : 28px;
+    right: 20px;
+    display: inline-block;
+    content: url("/img/téléchargement (4).svg");
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+
+#button1 {
+    display: flex;
+    border: solid #167dea 1px;
+    border-radius: 20px;
+    background-color: transparent;
+    padding: 0.6rem 1rem;
+    font-size: 12px; 
+    color: #167dea;
+    font-weight: bold; 
+    align-items: center;     
+}
+
+#button1 > a {
+    text-decoration: none;
+    font-size: 12px; 
+    color: #167dea;
+    font-weight: bold; 
+}
+
+#button1::after {  
+    content: url("/img/téléchargement (21).svg");
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+
+#button2 {
+    border: none;
+    background-color: transparent;
+    padding: 0.6rem 0.7rem;
+    font-size: 12px; 
+    color: #eb2543;
+    font-weight: bold;      
+}
+
+
+#button2 > a {
+    text-decoration: none;
+    font-size: 12px; 
+    color: #eb2543;
+    font-weight: bold; 
+}
+
+
+#button2::after {  
+    content: url("/img/imgi_2_fr.svg");
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+
+.menu2{
+width: 530px;
+justify-content: end;
+}
+
+.menu2 > ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    
+}
+
+.menu2 > ul > li > a {
+    text-decoration: none;
+    color: #eb2543;
+}
+
+.telechargement{
+  width: 20px;
+  height: 20px;
+}
+
+
+.essai{
+    position: absolute;
+}
+
+
+
+/* HEADER */
+
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+ 
+}
+
+header > img {
+    height: 400px;
+    width: 1200px;
+    border-radius: 20px;
+}
+
+.input-recherche{
+    position:absolute;
+    display: flex;
+    top: 170px;
+    background-color: white;
+    border-radius: 10px;
+    width:1050px;
+    height: 100px;
+    z-index: 1;
+
+}
+
+#input1{
+    display: flex;
+    position: absolute;
+    top:25px;
+    left: 20px;
+    text-indent: 40px;
+    padding-top: 15px;
+    height: 35px;
+    width: 280px;
+    border-radius: 10px;
+    vertical-align: 10em;
+    z-index:-2;
+}
+
+.label-input1{
+    display: flex;
+    position: relative;
+    top:28px;
+    left: 60px;
+    z-index:20;
+}
+.label-input2{
+    display: flex;
+    position: relative;
+    top:28px;
+    left: 250px;
+    z-index:20;
+}
+.label-input3{
+    display: flex;
+    position: relative;
+    top:28px;
+    left: 510px;
+    z-index:20;
+}
+
+.image-placeholder-input1{
+    position: absolute;
+    top:40px;
+    left: 25px;
+    width: 20px;
+    height: 20px;
+}
+
+#input2{
+    position: absolute;
+    top:25px;
+    left: 320px;
+    text-indent: 40px;
+    padding-top: 15px;
+    height: 35px;
+    width: 280px;
+    border-radius: 10px;
+
+}
+
+#input2::placeholder {
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: #818494;
+    background-image: url("/img/téléchargement (18).svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 5px 15px;
+
+}
+
+
+
+#input1::placeholder {
+    font-weight: bold;
+    color: #818494;
+    background-image: url("/img/téléchargement (19).svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 5px 15px;
+}
+
+#input3::placeholder {
+    font-weight: bold;
+    color: #818494;
+    background-image: url("/img/téléchargement (17).svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 5px 15px;
+}
+
+
+#input3{
+    position: absolute;
+    top:25px;
+    left: 620px;
+    text-indent: 40px;
+    padding-top: 15px;
+    height: 35px;
+    width: 280px;
+    border-radius: 10px;
+}
+
+#submit1{
+        position: absolute;
+    top:25px;
+    right: 20px;
+    background-color: #191e3b;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;  
+    font-weight: bold;
+}
+  
+
+
+
+/* MAIN */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    gap:30px;
+    font-family: 'CentralNo2normal';
+}
+
+/* MAIN SECTION 1 */
+.avantage-fidelite-membres1{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 1190px;
+    background-color: #191e3b;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.avantage-fidelite-membres1 > img {
+    height: 60px;
+}
+
+
+.avantage-fidelite-membres1 > p {
+    color: white;
+    width: 700px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'CentralNo2';
+}
+
+.avantage-fidelite-membres1 > a {
+    width: 420px;
+    text-decoration: none;
+    text-align: end;
+    padding-right: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: 'CentralNo2';
+}
+
+/* MAIN SECTION 2 */
+.avantage-fidelite-membres2{
+    display: flex;
+    height: 130px;
+    width: 1200px;
+    border-radius: 20px;
+    gap: 15px;
+}
+
+.avantage-fidelite-membres2 > a{
+    display: flex;
+text-decoration: none;
+}
+
+
+
+
+.card1 {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    flex: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    height: 100%;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+
+}
+
+.card1 img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+
+.card1-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f1ea;
+    width: 100%;
+    z-index: 9;
+    font-size: 12px;
+}
+
+.card1-content > h3 {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 10px;
+    font-size: 14px;
+    font-family: 'CentralNo2';
+}
+
+.card1-content > p {
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 10px;
+    line-height: 0.1em;
+}
+.card1-content > p::after {
+    content: url("/img/téléchargement (16).svg");
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 75px;
+    margin-right: 15px;
+}
+
+
+
+
+.card2-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f1ea;
+    width: 100%;
+    z-index: 9;
+    font-size: 12px;
+}
+.card2-content > h3 {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 25px;
+    font-size: 14px;
+    font-family: 'CentralNo2';
+}
+
+.card2-content > p {
+    display: flex;
+    padding-left: 15px;
+
+    align-items: center;
+    font-size: 10px;
+    line-height: 0.1em;
+}
+.card2-content > p::after {
+    content: url("/img/téléchargement (16).svg");
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+
+/* MAIN SECTION 3 */
+.avantage-fidelite-membres3 {
+    position: relative;
+    width: 1200px;
+    border-radius: 20px;
+}
+
+.avantage-fidelite-membres3 > img {
+    width: 1200px;
+    border-radius: 20px;
+}
+
+.promo-autonme{
+    left:50px;
+    bottom:50px;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    width: 385px;
+    height: 210px;
+    background-color: #f8f3e7;
+}
+
+.promo-autonme > h2 {
+    padding-top: 20px;
+    padding-left: 25px;
+    font-size: 35px;
+    font-family: 'Recoleta';
+    color: #56586a;
+}
+
+.promo-autonme > p {
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 14px;
+    color: #56586a;
+}
+
+#submit2{
+    position: relative;
+    top:20px;
+    left: 25px;
+    background-color: #191e3b;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;  
+    font-family: 'CentralNo2';
+}
+
+
+/* MAIN SECTION 4 */
+
+.avantage-fidelite-membres4 {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 350px;
+    border-radius: 20px;
+    gap:15px;
+}
+.avantage-fidelite-membres4 > h2 {
+    font-family: 'Recoleta';
+    font-size: 25px;
+    color: #44485f;
+}
+
+.conteneur-card3{
+    display: flex;
+    width: 100%;
+    height: 305px;
+    gap:15px
+}
+.card3 > p {
+    position: absolute;
+    bottom:10px;
+    left: 10px;
+    z-index: 10;
+    color: white;
+    font-family: 'CentralNo2';
+}
+.card3 {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    flex: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+
+.img-container3 {
+    z-index: 1;
+    flex:1;
+    position: relative;
+}
+
+.card3 img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+.card3-content {
+    display: flex;
+    background-color: #f4f1ea;
+    width: 100%;
+    z-index: 9;
+    font-size: 12px;
+}
+
+/* MAIN SECTION 5 */
+
+
+.avantage-fidelite-membres5 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 1200px;
+    height: 510px;
+    border-radius: 20px;
+    gap:15px;
+}
+.avantage-fidelite-membres5 > h2 {
+    font-family: 'Recoleta';
+    font-size: 25px;
+    color: #44485f;
+}
+.avantage-fidelite-membres5 > p {
+    font-size: 14px;
+    color: #56586a;
+    font-family: 'CentralNo2';
+}
+
+
+#submit3{
+    position: absolute;
+    top:0px;
+    right: 0px;
+    background-color: #191e3b;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;  
+    font-family: 'CentralNo2';
+}
+
+.conteneur-card4{
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    height: 440px;
+    gap:15px
+}
+
+.card4 {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    flex: 1;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.img-container4{
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    height: 210px;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.card4 img {
+    height: 210px;
+    position: absolute;
+    border-radius: 20px;
+    transform: translate(-10px, 0px);
+}
+
+.card4 >h3 > p {
+background-color: #227950;
+color: white;
+font-size: 14px;
+padding: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+border-radius: 5px;
+}
+
+.card4 >h3 {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+}
+
+.card4 > p {
+    font-size: 12px;
+}
+
+.card4 >h5 {
+    display: flex;
+    
+    font-size: 18px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.card4 >h5 > p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    text-decoration: line-through;
+    padding-left: 5px;
+    color: #44485f;
+}
+
+.card4 >h5 > p::after {
+    content: url("/img/téléchargement (9).svg");
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.prix-membre {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #7b1fa2;
+    width: 60%;
+    margin-top: 10px;
+}
+
+.prix-membre::before {
+    content: url("/img/téléchargement (10).svg");
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 1px 4px;
+}
+
+
+/* MAIN SECTION 6 */
+
+.avantage-fidelite-membres6 {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 420px;
+    border-radius: 20px;
+    gap:15px;
+}
+.avantage-fidelite-membres6 > h2 {
+    font-family: 'Recoleta';
+    font-size: 25px;
+    color: #44485f;
+}
+
+.menu3{
+justify-content: start;
+align-items: center;
+border-bottom: solid 1px #dfe0e4;
+height:50px;
+}
+
+.menu3 > ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu3 > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu3 > ul > li > a:hover {
+    text-decoration: none;
+    border-bottom: 4px solid black;
+    padding-bottom: 14px;
+}
+
+
+
+
+
+
+.conteneur-card5 {
+    display: flex;
+    width: 1200px;
+    height: 275px;
+    gap: 15px;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top:10px;
+}
+
+.card5 {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    flex: 1;
+    border-radius: 20px;
+    border: 1px solid #dfe0e4;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container5{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    height: 160px;
+    margin-bottom: 10px;
+}
+
+.card5 img {
+    height: 210px;
+    position: absolute;
+    transform: translate(-10px, 0px);
+}
+
+.card5 > h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+.card5 > h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.card5 > p {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN SECTION 7 */
+
+.card6{
+    text-decoration: none;
+    display: flex;
+    width: 1200px;
+    height: 185px;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid #dfe0e4;
+}
+
+.img-container6 {
+    width: 660px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.img-container6>img {
+    width: 100%;
+    transform: translate(0px, -70px);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+.card6-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.card6-content>img {
+    display: flex;
+    width: 90px;
+    height:55px;
+}
+
+.card6-content > h3 {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.card6-content > p {
+    display: flex;
+    font-size: 14px;
+}
+
+
+
+
+/* MAIN SECTION 8 */
+
+
+.avantage-fidelite-membres8{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    width: 1200px;
+    height: 400px;
+    gap:25px;
+}
+
+.avantage-fidelite-membres8 > a {
+    text-decoration: none;
+    color: black;
+    font-family: 'CentralNo2';
+    font-size: 14px;
+}
+
+.card7{
+    font-family: 'CentralNo2normal';
+    display: flex;
+    width: 1200px;
+    height: 346px;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid #dfe0e4;
+
+}
+
+
+.img-container7 {
+    width: 390px;
+    overflow: hidden;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.img-container7>img {
+    position: absolute;
+top:0;
+left:0;
+    transform: translate(-240px, -170px);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+
+
+.card7-content {
+    display: flex;
+    flex-direction: column;
+
+    width: 590px;
+}
+
+.card7-content > h2 {
+    display: flex;
+    font-family: 'Recoleta';
+    font-size: 35px;
+    margin-top: 30px;
+    margin-left:30px;
+}
+
+.card7-content > h4 {
+    
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:30px;
+}
+
+.card7-content > ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    font-size: 14px;
+    line-height: 2em;
+}
+
+.card7-content > p {
+    display: flex;
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+
+.conditions {
+    text-decoration: underline;
+    color: #1c6ce3;
+    display: flex;
+    font-size: 14px;
+margin-top: 30px;
+}
+
+.qr-code{
+    position: relative;
+    display: flex;
+    width: 190px;
+    height: 100%;
+}
+
+.qr-code>img{   
+    position: absolute;
+    top: 65px;
+    right:35px;
+    width: 140px;
+    height: 140px;
+}
+
+/* FOOTER*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    background-color: #f8f3e7;
+    gap: 25px;
+    align-items: center;
+
+}
+
+footer > a{
+    display: flex;
+    height: 105px;
+    width: 1250px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+footer > a > img{
+    height: 25px;
+}
+
+
+.nav-lien{
+    display: flex;
+     width:1250px;
+     height:370px;
+     gap:25px;
+
+}
+   
+.nav-lien>ul
+{
+list-style: none;
+flex-direction: column;
+flex:1;
+color: black;
+height:360px;
+
+
+}
+.nav-lien>ul>li>a{
+    text-decoration: none;
+    align-items: start;
+    color: #1668e3;
+}
+
+.nav-lien>ul>li{
+    padding: 5px;
+}
+
+
+.tous-droits{
+    display: flex;
+    font-size: 10px;
+    text-align: center;
+    justify-content: center;
+    height: 130px;
+    width: 1250px;
+    border-top:#dfe0e4 1px solid;
+        font-family: 'CentralNo2normal';
+        padding-top: 30px;
+        padding-bottom: 60px;
+        background-color: #f8f3e7;
+}
